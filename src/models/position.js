@@ -8,4 +8,9 @@ const positionSchema = new mongoose.Schema({
 }, {timestamps: true});
 
 const position = mongoose.model('positions', positionSchema)
-module.exports = Position
+module.exports = position
+
+// _id:1
+// position: Captain MU
+// age: 21
+//...

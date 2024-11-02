@@ -1,7 +1,8 @@
 var jwt = require('jsonwebtoken');
 var { jwtDecode } = require('jwt-decode');
-// require('dotenv').config();
-const SECRET_KEY = "a";
+require('dotenv').config();
+const SECRET_KEY = process.env.SECRET_KEY;
+const EXPIRES_IN = process.env.EXPIRES_IN;
 
 class jwtMiddleWare {
     createToken = (data, SECRET_KEY, expiresIn) => {
